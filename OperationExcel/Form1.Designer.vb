@@ -314,7 +314,7 @@ Partial Class Form1
         Me.Controls.Add(Me.Save_DstPath)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form1"
-        Me.Text = "Excel批量操作工具"
+        Me.Text = "Form1"
         Me.ex.ResumeLayout(False)
         Me.ex.PerformLayout()
         Me.GroupBox2.ResumeLayout(False)
