@@ -219,4 +219,19 @@ AA:
 AA:
     End Sub
 
+    Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
+        objExcel1 = CreateObject("Excel.Application")
+        objWorkBooks1 = objExcel1.Workbooks.Open("F:\\demo.xlsx")
+        objExcel1.Visible = False
+
+        objWorkSheet1 = objWorkBooks1.Sheets(1) '打开第一页
+        objWorkSheet1.select()
+        objWorkBooks1.save()
+        objExcel1.DisplayAlerts = False    '关闭时不提示保存
+        objWorkSheet1 = Nothing
+        objWorkBooks1.close()
+        objWorkBooks1 = Nothing
+        objExcel1.Quit()    '关闭EXCEL
+        objExcel1 = Nothing
+    End Sub
 End Class

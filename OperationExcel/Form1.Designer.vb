@@ -50,6 +50,7 @@ Partial Class Form1
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.LoadDstPath = New System.Windows.Forms.Button()
         Me.Save_DstPath = New System.Windows.Forms.TextBox()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.ex.SuspendLayout()
         Me.GroupBox2.SuspendLayout()
         Me.SuspendLayout()
@@ -301,11 +302,21 @@ Partial Class Form1
         Me.Save_DstPath.Size = New System.Drawing.Size(358, 21)
         Me.Save_DstPath.TabIndex = 21
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(595, 46)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 25
+        Me.Button2.Text = "更改sheet"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 12.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(718, 413)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ex)
         Me.Controls.Add(Me.GroupBox2)
@@ -350,5 +361,6 @@ Partial Class Form1
     Friend WithEvents Label3 As System.Windows.Forms.Label
     Friend WithEvents VersionText As System.Windows.Forms.TextBox
     Friend WithEvents PageText As System.Windows.Forms.TextBox
+    Friend WithEvents Button2 As System.Windows.Forms.Button
 
 End Class
